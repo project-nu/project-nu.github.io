@@ -1,0 +1,113 @@
+html {
+	font-size: 20px;	
+}
+body {
+	width: 38em;
+	margin: 0 auto;
+}
+div#article {
+	font-family: "FOT-筑紫Cオールド明朝 Pr6N", "MS PMincho", serif;
+	line-height: 1.5em;
+	box-sizing: border-box;
+	padding: 0 1rem;
+	width: 100%;
+	height: 22.05rem;
+	overflow: visible;
+	columns: 22.05rem;
+	-webkit-columns: 22.05rem;
+	column-rule: 1px solid #ddd;
+	-webkit-column-rule: 1px solid #ddd;
+	column-gap: 1rem;
+	-webkit-column-gap: 1rem;
+	writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	-moz-writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	-webkit-layout-grid: char strict 1.5em 1em;
+	border-top: 1px solid #ddd;
+}
+#article kut {
+	display: inline-block;
+	height: 1em;
+	margin-bottom: -1em;
+	position: relative;
+	z-index: 999;
+	top: -0.25em;
+	right: -0.25em;
+	font-feature-settings: "vert";
+}
+div#article h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	width: 36rem;
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div#article h1 > span {}
+div#article h2 {
+	font-size: 1.5em;
+	line-height: 2em;
+	margin: 1rem 1em;
+}
+p {
+	margin: 1rem 0 1rem 1.5em;
+}
+a, u {
+	text-decoration: none;
+	color: black;
+	background-image: linear-gradient(to right, #fff 50%, #666665 50%);
+	background-repeat: repeat-y;
+	background-size: 2px 2px;
+	background-position: 95% 0;
+}
+figure {
+	display: block;
+	margin: 0;
+	padding: 0;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+figure > pad {
+	display: block;
+	width: 36rem;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+figure > span {
+	display: flex;
+	position: absolute;
+	top: auto;
+	left: 50%;
+	width: 36rem;
+	height: 44rem;
+	background: white;
+	margin-left: -18rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+figure > span > img {
+	display: block;
+	flex: none;
+	width: auto;
+	height: 100%;
+	margin: auto 0;
+	align-self: center;
+}
+figure > span> img.wide {
+	height: auto;
+	width: 36rem;
+}
+figure > span > h2 {
+	position: absolute;
+	top: 0;
+	right: -1rem;
+	margin: 0;
+	padding: 1em 0.5em;
+	background: black;
+	color: white;
+}
