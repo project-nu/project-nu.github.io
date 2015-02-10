@@ -6,7 +6,7 @@ body {
 	margin: 0 auto;
 }
 div#article {
-	font-family: "FOT-筑紫Cオールド明朝 Pr6N", "MS PMincho", serif;
+	font-family: "FOT-筑紫Cオールド明朝 Pr6N", "Yu Mincho", "MS Mincho", serif;
 	line-height: 1.5em;
 	box-sizing: border-box;
 	padding: 0 1rem;
@@ -35,6 +35,7 @@ div#article {
 	top: -0.25em;
 	right: -0.25em;
 	font-feature-settings: "vert";
+	text-shadow:-1px 0 0 white,1px 0 0 white,0 -1px 0 white,0 1px 0 white;
 }
 div#article h1 {
 	font-size: 2em;
@@ -59,8 +60,20 @@ a, u {
 	color: black;
 	background-image: linear-gradient(to right, #fff 50%, #666665 50%);
 	background-repeat: repeat-y;
-	background-size: 2px 2px;
+	background-size: 0.1em 0.1em;
 	background-position: 95% 0;
+}
+u + u:before, a + a:before, a + u:before, u + a:before {
+	content: ' ';
+	display: inline-block;
+	height: 0.1em;
+	width: 1.5em;
+	margin-top: -0.05em;
+	margin-bottom: -0.05em;
+	background-image: linear-gradient(to right, white 50%, white 100%);
+	background-repeat: repeat-y;
+	background-size: 0.1em 0.1em;
+	background-position: right 0;
 }
 figure {
 	display: block;
